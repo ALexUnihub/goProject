@@ -2,13 +2,22 @@
 
 ## Установка
 Для использования данного сервиса требуется подтянуть репозиторий:
-    git pull https://github.com/ALexUnihub/goProject.git master
+
+  git pull https://github.com/ALexUnihub/goProject.git master
+
 Для проверки его работоспобности можно запустить уже написанные тесты:
-    journal_test.go в папке webService/pkg/handler
-    repoJournal_test.go в папке webService/journal_repo/handler
+
+  journal_test.go в папке webService/pkg/handler
+  
+  repoJournal_test.go в папке webService/journal_repo/handler
+
 Данный сервис позволяет получить в формате JSON данные графа социальных связей и таблицу активностей, которые в формате JSON приходят в бразуер под названиями nodes и activity соответственно.
+
 Для того, чтобы увидеть, что данные корректно приходят в бразуре требутеся запустить сервис, перейдя в папку webService/cmd, запустить main.go:
-    go run .\main.go
+  go run .\main.go
+
 Сервис запускается на локальной машине на 8080 порту. Для просмотра данных журнала (который изначально для тестирования задан вручную), нужно перейти по ссылке:
-    http://localhost:8080/api/graph
+
+  http://localhost:8080/api/graph
+
 Данные будут отображены также в консоли, как и журнал коммуникаций, на базе которого все было построено.
